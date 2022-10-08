@@ -26,12 +26,15 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: WebView(
-        onWebViewCreated: (WebViewController controller){
-          this.controller = controller;
-        },
-        initialUrl: homeUrl,
-        javascriptMode: JavascriptMode.unrestricted,    // javascript 실행 가능 (ex. youtube url)
+      body: SafeArea(
+        bottom: false,
+        child: WebView(
+          onWebViewCreated: (WebViewController controller){
+            this.controller = controller;
+          },
+          initialUrl: homeUrl,
+          javascriptMode: JavascriptMode.unrestricted,    // javascript 실행 가능 (ex. youtube url)
+        ),
       )
     );
   }
