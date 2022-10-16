@@ -128,6 +128,6 @@ class _BottomPart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(child: Image.asset('asset/img/middle_image.png'));
+    return Expanded(child: Image.asset('asset/img/middle_image_2.png'));
   }
 }
